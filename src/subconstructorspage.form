@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="subconstructorspage">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="947" height="400"/>
+    </constraints>
+    <properties>
+      <preferredSize width="1020" height="550"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="1ee17" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-14990405"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="b4e4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="14"/>
+              <foreground color="-1313026"/>
+              <text value="Search by Company Name:"/>
+            </properties>
+          </component>
+          <component id="47108" class="javax.swing.JTextField" binding="searchField">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="160" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="13424" class="javax.swing.JComboBox" binding="sortComboBox">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Sort..."/>
+                <item value="Name A-Z"/>
+                <item value="Name Z-A"/>
+                <item value="Latest Purchase"/>
+                <item value="Oldest Purchase"/>
+              </model>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="fe21f" layout-manager="GridLayoutManager" row-count="1" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-14990405"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="4335b" class="javax.swing.JButton" binding="addSubconstructorButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add Subconstructor"/>
+            </properties>
+          </component>
+          <component id="abf5e" class="javax.swing.JButton" binding="viewSubconstructorButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="View Subconstructor"/>
+            </properties>
+          </component>
+          <component id="c6ad0" class="javax.swing.JButton" binding="updateSubconstructorButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Update Subconstructor"/>
+            </properties>
+          </component>
+          <component id="1b296" class="javax.swing.JButton" binding="removeSubconstructorButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Remove Subconstructor"/>
+            </properties>
+          </component>
+          <component id="e2baa" class="javax.swing.JComboBox" binding="topComboBox">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Select..."/>
+                <item value="Top 3"/>
+                <item value="Top 5"/>
+                <item value="Top 10"/>
+              </model>
+            </properties>
+          </component>
+          <component id="7362a" class="javax.swing.JButton" binding="showTopButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Show Top"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="7c2c6">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b6ae6" class="javax.swing.JTable" binding="subcontractorTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="clientsSalesPage">
+  <grid id="27dc6" binding="panel1" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="534" height="400"/>
+    </constraints>
+    <properties>
+      <preferredSize width="720" height="610"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6fe0e" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="0">
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-14990405"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="edea7" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <foreground color="-1313026"/>
+              <text value="Search by Name:"/>
+            </properties>
+          </component>
+          <component id="1e500" class="javax.swing.JTextField" binding="searchField">
+            <constraints/>
+            <properties>
+              <preferredSize width="120" height="30"/>
+            </properties>
+          </component>
+          <component id="df6aa" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <foreground color="-2762790"/>
+              <text value="Year:"/>
+            </properties>
+          </component>
+          <component id="e7709" class="javax.swing.JComboBox" binding="yearFilter">
+            <constraints/>
+            <properties>
+              <model>
+                <item value="Select..."/>
+                <item value="All"/>
+                <item value="This Year"/>
+                <item value="2025"/>
+                <item value="2024"/>
+                <item value="2023"/>
+                <item value="2022"/>
+                <item value="2021"/>
+                <item value="2020"/>
+              </model>
+            </properties>
+          </component>
+          <component id="fcbff" class="javax.swing.JButton" binding="backButton">
+            <constraints/>
+            <properties>
+              <text value="Back"/>
+            </properties>
+          </component>
+          <component id="fe5cb" class="javax.swing.JButton" binding="viewInsightsButton">
+            <constraints/>
+            <properties>
+              <text value="View Insights"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="6bd6b" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-14990405"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="8a68b" class="javax.swing.JButton" binding="exportButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Export CSV"/>
+            </properties>
+          </component>
+          <component id="269c2" class="javax.swing.JButton" binding="viewProfileButton">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="View Profile"/>
+            </properties>
+          </component>
+          <component id="44c8c" class="javax.swing.JButton" binding="addSaleButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add Sale"/>
+            </properties>
+          </component>
+          <component id="ee85e" class="javax.swing.JButton" binding="updateSaleButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Update Sale"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="d9bf9">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="18cf1" class="javax.swing.JTable" binding="salesTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>

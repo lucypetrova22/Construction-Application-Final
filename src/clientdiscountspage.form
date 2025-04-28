@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="clientdiscountspage">
+  <grid id="27dc6" binding="panel1" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="7c39b" layout-manager="FlowLayout" hgap="30" vgap="10" flow-align="0">
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-14990405"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="b2e12" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <foreground color="-1313026"/>
+              <text value="Search by Client Name:"/>
+            </properties>
+          </component>
+          <component id="290ad" class="javax.swing.JTextField" binding="searchField">
+            <constraints/>
+            <properties>
+              <preferredSize width="130" height="30"/>
+            </properties>
+          </component>
+          <component id="e139d" class="javax.swing.JButton" binding="searchButton">
+            <constraints/>
+            <properties>
+              <text value="Search"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="2b2f4" layout-manager="FlowLayout" hgap="10" vgap="10" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-14990405"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="c37da" class="javax.swing.JButton" binding="addDiscount">
+            <constraints/>
+            <properties>
+              <text value="Add Discount"/>
+            </properties>
+          </component>
+          <component id="40d0e" class="javax.swing.JButton" binding="updateButton">
+            <constraints/>
+            <properties>
+              <text value="Update Discount"/>
+            </properties>
+          </component>
+          <component id="6f4ad" class="javax.swing.JButton" binding="deleteButton">
+            <constraints/>
+            <properties>
+              <text value="Delete Discount"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="24cc1">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8f0dd" class="javax.swing.JTable" binding="table">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
